@@ -14,3 +14,13 @@ reason, my data persists on RDS. I only need to spin up another instance, instal
 <br/>
 Those last steps can be handled by a custom AMI (Amazon Machine Image) which has the software already installed and configured, or I can <br/>
 do it using install scripts that run when a new EC2 instance is spun up.<br/>
+<br/>
+<br/>
+For anyone reading this, you may wonder why I go through things a certain way. You may see me host the blog on EC2 instances and then<br/>
+migrate to docker containers and wonder why not just go straight to containerization. I'm doing this as an exploration of the tech<br/>
+and like to keep my notes for future reference. Sometimes I find it handy when looking back to see my understanding and process at<br/>
+the time. Every time I've done this experiment with Wordpress, I've taken it from a single server hosting everything and grown it<br/>
+out according to what I think would be the next logical step.<br/>
+<br/>
+Alright, there's one exception, I've never started it out with a database on the instance and migrated the data over to RDS because<br/>
+it's pretty simple to start out with RDS and configure WP to use it.
